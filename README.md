@@ -1,5 +1,13 @@
 TF2 RPC
 ---
+[![pypresence](https://img.shields.io/badge/RPC-PyPresence-informational)](https://github.com/qwertyquerty/pypresence)
+[![Tailer](https://img.shields.io/badge/Log%20Reader-Tailer-informational)](https://github.com/six8/pytailer)
+[![GUI](https://img.shields.io/badge/GUI-easygui-informational)](https://img.shields.io/badge/GUI-easygui-informational)
+[![valve y](https://img.shields.io/badge/Heavy%20Update-Never-critical)](https://www.youtube.com/watch?v=oiuyhxp4w9I)
+
+
+![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)
 
 A theoretically cross-platform Discord Rich Presence Script for Team Fortress 2
 
