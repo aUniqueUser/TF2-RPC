@@ -10,7 +10,8 @@ TF2 RPC
 ![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)
 
 A theoretically cross-platform Discord Rich Presence Script for Team Fortress 2
-
+Tested on my Linux Manjaro machine, but should also work on other Linux distros, macOS and Windows. 
+Please open an issue if things go wrong.
 
 Running from source
 ---
