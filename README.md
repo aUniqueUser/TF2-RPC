@@ -17,10 +17,16 @@ Running from source
 ---
 > MAKE SURE TO LAUNCH TF2 WITH THE `-condebug` LAUNCH OPTION
 
-Run `main.py` and follow the prompts.
+##### Step 1) Have Python 3 installed.
+Most Linux distros have Python 3 installed by default. You may have to install it on Windows or macOS.
+Download it [here](https://www.python.org/downloads/) or through your package manager.
+
+##### Step 2) Clone this repo into a folder and install the dependencies.
+Click clone. Open a Terminal / CMD / PowerShell inside the folder you cloned it into and run `pip install -r requirements.txt`.
+
+Afterwards, all you need to do is run `main.py` and follow the prompts.
 After setting your path the first time, you will not be asked again.
 Delete `tf_path.txt` to reset your path.
-
 
 
 
@@ -36,14 +42,12 @@ Yes. It does not mess with any of your TF2 files and runs independent of Team Fo
 Make sure you are launching the game with the `-condebug` launch option. Launch options can be set by right-clicking Team Fortress 2 in your Steam Library, clicking properties, and clicking Set Launch Options. This launch option tells TF2 to leave a log file, which this program can then read.
 
 
-
-
 Credits
 ---
 
-Log file reading is powered by:
+Log file reading uses:
 https://github.com/six8/pytailer
 
-GUI is done by:
+GUI uses:
 https://github.com/robertlugg/easygui
 
