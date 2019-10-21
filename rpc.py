@@ -49,8 +49,12 @@ update(details, state, image)
 
 # Tail the log file
 for line in tailer.follow(open(log_file)):
-    print(line)
-
+    #print(line)
+    # Uncomment the line above (ie, remove the '#') to output all information. This may decrease performance,
+    # so it is left disabled by default.
+    # If this program ends and crashes, try to re-create it and uncomment the print(line) function.
+    # Then open an issue with the console output.
+    
     # Read the latest output and check for each case.
 
     if '[PartyClient] Requesting queue for 12v12 Casual Match' in line:
