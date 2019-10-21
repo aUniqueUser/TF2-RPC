@@ -12,8 +12,10 @@ TF2 RPC
 ![preview](https://i.imgur.com/rD1PXPQ.gif)
 
 
-A theoretically cross-platform Discord Rich Presence Script for Team Fortress 2
-Tested on my Linux Manjaro machine, but should also work on other Linux distros, macOS and Windows. 
+A theoretically cross-platform Discord Rich Presence Script for Team Fortress 2.
+
+Tested on my Linux Manjaro machine, but should also work on other Linux distros, macOS and Windows.
+
 Please open an issue if things go wrong.
 
 [My Steam Profile](https://steamcommunity.com/id/EmeraldSnorlax)
@@ -24,6 +26,7 @@ Running from source
 
 ##### Step 1) Have Python 3 installed.
 Most Linux distros have Python 3 installed by default. You may have to install it on Windows or macOS.
+
 Download it [here](https://www.python.org/downloads/) or through your package manager.
 
 ##### Step 2) Clone this repo into a folder and install the dependencies.
@@ -32,8 +35,8 @@ Click clone. Open a Terminal / CMD / PowerShell inside the folder you cloned it 
 Afterwards, all you need to do is run `python main.py` and follow the prompts.
 After setting your path the first time, you will not be asked again.
 Delete `tf_path.txt` to reset your path.
-If it complains about not being able to find a log file, make sure you have launched TF2 with the `-condebug` launch option and double check your path.
 
+If it complains about not being able to find a log file, make sure you have launched TF2 with the `-condebug` launch option and double check your path.
 
 
 FAQ
