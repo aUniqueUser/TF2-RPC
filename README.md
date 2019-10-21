@@ -50,6 +50,9 @@ Yes. It does not mess with any of your TF2 game files and runs independent of Te
 
 Make sure you are launching the game with the `-condebug` launch option. Launch options can be set by right-clicking Team Fortress 2 in your Steam Library, clicking properties, and clicking Set Launch Options. This launch option tells TF2 to leave a log file, which this program can then read.
 
+##### When is the Heavy Update coming?
+
+Soon™
 
 Credits
 ---
