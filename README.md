@@ -24,9 +24,10 @@ Download it [here](https://www.python.org/downloads/) or through your package ma
 ##### Step 2) Clone this repo into a folder and install the dependencies.
 Click clone. Open a Terminal / CMD / PowerShell inside the folder you cloned it into and run `pip install -r requirements.txt`.
 
-Afterwards, all you need to do is run `main.py` and follow the prompts.
+Afterwards, all you need to do is run `python main.py` and follow the prompts.
 After setting your path the first time, you will not be asked again.
 Delete `tf_path.txt` to reset your path.
+If it complains about not being able to find a log file, make sure you have launched TF2 with the `-condebug` launch option and double check your path.
 
 
 
@@ -35,7 +36,7 @@ FAQ
 
 ##### Is this VAC safe?
 
-Yes. It does not mess with any of your TF2 files and runs independent of Team Fortress 2. It simply hooks onto the `console.log` file and processes the console output, then matches it up to events.
+Yes. It does not mess with any of your TF2 game files and runs independent of Team Fortress 2. It simply hooks onto the `console.log` file and processes the console output, then matches it up to events.
 
 ##### It keeps saying there is no log file found!
 
