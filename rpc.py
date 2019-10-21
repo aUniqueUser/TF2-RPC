@@ -52,8 +52,7 @@ for line in tailer.follow(open(log_file)):
     #print(line)
     # Uncomment the line above (ie, remove the '#') to output all information. This may decrease performance,
     # so it is left disabled by default.
-    # If this program ends and crashes, try to re-create it and uncomment the print(line) function.
-    # Then open an issue with the console output.
+    # Only enable if debugging
     
     # Read the latest output and check for each case.
 
