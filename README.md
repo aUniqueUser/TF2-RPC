@@ -1,9 +1,10 @@
 TF2 RPC
 ---
-[![pypresence](https://img.shields.io/badge/RPC-PyPresence-informational)](https://github.com/qwertyquerty/pypresence)
-[![Tailer](https://img.shields.io/badge/Log%20Reader-Tailer-informational)](https://github.com/six8/pytailer)
-[![GUI](https://img.shields.io/badge/GUI-easygui-informational)](https://img.shields.io/badge/GUI-easygui-informational)
-[![valve y](https://img.shields.io/badge/Heavy%20Update-Never-critical)](https://www.youtube.com/watch?v=oiuyhxp4w9I)
+[![pypresence](https://img.shields.io/badge/RPC-PyPresence-informational?style=for-the-badge)](https://github.com/qwertyquerty/pypresence)
+[![Tailer](https://img.shields.io/badge/Log%20Reader-Tailer-informational?style=for-the-badge)](https://github.com/six8/pytailer)
+[![GUI](https://img.shields.io/badge/GUI-easygui-informational?style=for-the-badge)](https://img.shields.io/badge/GUI-easygui-informational)
+[![valve y](https://img.shields.io/badge/Heavy%20Update-Never-critical?style=for-the-badge)](https://www.youtube.com/watch?v=oiuyhxp4w9I)
+[![steam profile](https://img.shields.io/badge/Steam%20%20Profile-EmeraldSnorlax-brightgreen?style=for-the-badge)](https://steamcommunity.com/id/EmeraldSnorlax)
 
 
 ![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)
@@ -18,7 +19,6 @@ Tested on my Linux Manjaro machine, but should also work on other Linux distros,
 
 Please open an issue if things go wrong.
 
-[My Steam Profile](https://steamcommunity.com/id/EmeraldSnorlax)
 
 Running from source
 ---
