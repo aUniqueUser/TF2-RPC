@@ -297,7 +297,7 @@ for line in tailer.follow(open(log_file)):
             gamemode = 'Payload'
         elif current_map == 'pl_upward':
             map = 'Upward'
-            gamemode = 'Final'
+            gamemode = 'Payload'
         # Payload Race Maps
         elif current_map == 'plr_bananabay':
             map = 'Banana Bay'
