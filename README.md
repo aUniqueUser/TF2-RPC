@@ -17,6 +17,8 @@ A theoretically cross-platform Discord Rich Presence Script for Team Fortress 2.
 
 Tested on my Linux Manjaro machine, but should also work on other Linux distros, macOS and Windows.
 
+**Windows support was done by [Kataiser](https://github.com/Kataiser), check them out!**
+
 Please open an issue if things go wrong.
 
 
