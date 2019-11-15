@@ -5,27 +5,28 @@
 #
 
 
-
-import tkinter
-import easygui as gui
 import os
-import time
 import sys
-from pypresence import Presence
+import time
+
+import easygui as gui
 import tailer
+from pypresence import Presence
 
 # RPC Client ID. Do not change.
 CLIENT_ID = '635786070625091584'
 RPC = Presence(client_id=CLIENT_ID)
 RPC.connect()
 
+
 def msg(text):
     gui.msgbox(text, 'TF2 RPC')
 
+
 # Grab the log file from tf_path.txt. Encoding is utterly scuffed, for some reason. Perhaps it's just my machine...
-f = open('tf_path.txt', 'r', encoding="ISO-8859-15")
+f = open('tf_path.txt', 'r', encoding='UTF8')
 tf_folder = f.read()
-log_file = tf_folder.rstrip('\n') + 'tf/console.log'
+log_file = os.path.join(tf_folder.rstrip('\n'), 'tf', 'console.log')
 f.close()
 
 # Check if the log file actually exists.
@@ -45,15 +46,16 @@ image = 'tf2'
 def update(details, state, image):
     RPC.update(large_image=image, large_text='A TF2 RPC script made by EmeraldSnorlax.', details=details, state=state)
 
+
 update(details, state, image)
 
 # Tail the log file
-for line in tailer.follow(open(log_file)):
+for line in tailer.follow(open(log_file, encoding='UTF8')):
     #print(line)
     # Uncomment the line above (ie, remove the '#') to output all information. This may decrease performance,
     # so it is left disabled by default.
     # Only enable if debugging
-    
+
     # Read the latest output and check for each case.
 
     if '[PartyClient] Requesting queue for 12v12 Casual Match' in line:
@@ -106,7 +108,6 @@ for line in tailer.follow(open(log_file)):
         msg('It looks like your TF2 client closed. \n Exiting...')
         sys.exit()
 
-
     #
     # Check map name.
     # Bittersweet that TF2 only gets an update once every 4 years. It means I won't need to update this list often.
@@ -122,8 +123,6 @@ for line in tailer.follow(open(log_file)):
     # > current_map is the map as reported back from console by TF2.
     # > map is the actual map name as spoken, and what is displayed in the RPC.
     # For example, current_map might be 'pl_badwater' and map would be 'Badwater Basin.'
-    #
-
 
     if 'Map: ' in line:
         current_map = line[5:]
@@ -186,7 +185,7 @@ for line in tailer.follow(open(log_file)):
             gamemode = '5CP'
         elif current_map == 'cp_sunshine_event':
             map = 'Sinshine'
-            gamemode == '5CP'
+            gamemode = '5CP'
         elif current_map == 'cp_snakewater_final1':
             map = 'Snakewater'
             gamemode = '5CP'
@@ -265,7 +264,7 @@ for line in tailer.follow(open(log_file)):
         elif current_map == 'pl_fifthcurve_event':
             map = 'Brimstone'
             gamemode = 'Payload'
-        elif current_map == 'pl_enclosure_final': # Yes. I skipped pl_cactuscanyon (Cactus Canyon).
+        elif current_map == 'pl_enclosure_final':  # Yes. I skipped pl_cactuscanyon (Cactus Canyon).
             map = 'Enclosure'
             gamemode = 'Payload'
         elif current_map == 'pl_frontier_final':
@@ -353,7 +352,7 @@ for line in tailer.follow(open(log_file)):
             gamemode = 'King of the Hill'
         elif current_map == 'koth_bagel_event':
             map = 'Cauldron'
-            gamemode == 'King of the Hill'
+            gamemode = 'King of the Hill'
         elif current_map == 'koth_viaduct_event':
             map = 'Eyeaduct'
             gamemode = 'King of the Hill'
@@ -424,7 +423,7 @@ for line in tailer.follow(open(log_file)):
         elif current_map == 'mvm_decoy':
             map = 'Decoy'
             gamemode = 'Mann vs. Machine'
-        elif current_map == 'mvm_ghost_town': # Yes. I skipped mvm_example (Example)
+        elif current_map == 'mvm_ghost_town':  # Yes. I skipped mvm_example (Example)
             map = 'Ghost Town'
             gamemode = 'Mann vs. Machine'
         elif current_map == 'mvm_mannhattan':
@@ -495,6 +494,5 @@ for line in tailer.follow(open(log_file)):
             image = 'payload'
         elif gamemode == 'Payload Race':
             image = 'payload_race'
-
 
         RPC.update(large_image=image, large_text='A TF2 RPC script made by EmeraldSnorlax.', details=map, state=gamemode, start=time.time())
