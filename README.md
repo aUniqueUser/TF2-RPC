@@ -54,7 +54,7 @@ Make sure you are launching the game with the `-condebug` launch option. Launch 
 
 ##### When is the Heavy Update coming?
 
-Soon™
+[I'll let you be the judge of that.](https://www.youtube.com/watch?v=FqzpAH-WAno)
 
 Credits
 ---
